@@ -1,9 +1,10 @@
-import MovingDot from "./componants/State";
+import MyApp from "./useEffect/Useeffetct";
 export default function App() {
+  // const statues = ["empty", "typing", "submitting", "success", "error"];
   return (
     <div>
-      <h1>hello world</h1>
-      <MovingDot />
+      {/* <MyCounter /> */}
+      <MyApp />
     </div>
   );
 }
