@@ -1,10 +1,9 @@
-import MyApp from "./useEffect/Useeffetct";
+import CityQuiez from "./module3/CityQuiez";
+
 export default function App() {
-  // const statues = ["empty", "typing", "submitting", "success", "error"];
   return (
     <div>
-      {/* <MyCounter /> */}
-      <MyApp />
+      <CityQuiez />
     </div>
   );
 }
