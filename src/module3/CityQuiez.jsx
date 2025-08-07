@@ -3,9 +3,9 @@ import React, { useState } from "react";
 const submitForm = (answer) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      let shouldError = answer.toLowerCase() !== "dhaka";
-      if (shouldError) {
-        reject(new Error("Good Guess! But you have made a mistake."));
+      let shouldanswer = answer.toLowerCase() === "dhaka";
+      if (!shouldanswer) {
+        reject(new Error("Good Try! but you have made a mmistake!"));
       } else {
         resolve();
       }
@@ -25,9 +25,12 @@ export default function CityQuiez() {
       </h1>
     );
   }
-
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
+  const handleTextChange = (e) => {
+    setError(null);
+    setanswer(e.target.value);
+  };
+  const handleFormSubmit = async (evn) => {
+    evn.preventDefault();
     setStatus("Submitting");
     try {
       await submitForm(answer);
@@ -37,6 +40,7 @@ export default function CityQuiez() {
       setError(err);
     }
   };
+
   return (
     <>
       <div className="p-20 bg-gray-200 flex justify-center ">
@@ -46,12 +50,13 @@ export default function CityQuiez() {
           </h1>
           <form onSubmit={handleFormSubmit} action="/">
             <textarea
+              className="disabled:border-2 disabled:border-black disabled:border-solid"
               name="textarea"
               cols="38"
               rows="4"
               disabled={status === "Submitting"}
               value={answer}
-              onChange={(e) => setanswer(e.target.value)}
+              onChange={handleTextChange}
             ></textarea>
             <br />
             <button
