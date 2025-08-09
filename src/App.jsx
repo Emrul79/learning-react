@@ -1,9 +1,9 @@
-import CityQuiez from "./module3/CityQuiez";
+import Menu from "./module3/Duplication";
 
 export default function App() {
   return (
     <div>
-      <CityQuiez />
+      <Menu />
     </div>
   );
 }
