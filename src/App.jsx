@@ -1,9 +1,9 @@
-import Menu from "./module3/Duplication";
+import Cordinates from "./module3/Accordian/Accordian";
 
 export default function App() {
   return (
     <div>
-      <Menu />
+      <Cordinates />
     </div>
   );
 }
