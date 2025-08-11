@@ -10,7 +10,6 @@ export default function Cordinates() {
       </h2>
       <Panel
         title="About"
-        activeIndex
         isActive={activeIndex === 0}
         onActiveHandle={() => setActiveIndex(0)}
       >

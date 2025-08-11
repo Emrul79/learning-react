@@ -1,9 +1,9 @@
-import Cordinates from "./module3/Accordian/Accordian";
+import Fancy from "./module3/DefaultBehavoir/Default";
 
 export default function App() {
   return (
     <div>
-      <Cordinates />
+      <Fancy />
     </div>
   );
 }
