@@ -96,7 +96,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative h-auto md:h-screen cursor-pointer overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+      className="relative h-auto md:h-screen  overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "leaflet/dist/leaflet.css";
 
 /* Custom CSS Variables for consistent theming */
 :root {
@@ -11,7 +12,7 @@
 }
 
 .dark {
-  --color-accent: #374151;
+  --color-accent: rgb(11 17 32 / var(--tw-bg-opacity));
 }
 
 /* Custom animations */
