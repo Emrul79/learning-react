@@ -1,5 +1,5 @@
-import MainProggram from "./module3/Resetting/MainProggram";
+import MainTaskBoard from "./module3/Taskboard/MainTaskBoard";
 
 export default function App() {
-  return <MainProggram />;
+  return <MainTaskBoard />;
 }
