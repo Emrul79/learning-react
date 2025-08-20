@@ -1,5 +1,5 @@
-import MainTaskBoard from "./module3/Taskboard/MainTaskBoard";
+import Page from "./useContext/mainContext";
 
 export default function App() {
-  return <MainTaskBoard />;
+  return <Page />;
 }
